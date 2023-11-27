@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM130PWZB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BM130PWZB5');
+  </script>
+  <meta charset="utf-8">
+  <meta name="description" content="SPIN: Simultaneous Perception, Interaction and Navigation">
+  <meta name="keywords" content="Whole-body Coordination, Active Vision, Mobile Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPIN-ROBOT</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./static/js/ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.min.js"></script>
+  <script src="./static/js/isInViewport.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.ico?">
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body no-bottom-padding">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SPIN: Simultaneous Perception, Interaction and Navigation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous CVPR submission
+            </span>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" style="padding-bottom: 0">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While there has been remarkable progress recently in the fields of manipulation and locomotion, mobile manipulation remains a long-standing challenge. Compared to locomotion or static manipulation, a mobile system must make a diverse range of long-horizon tasks feasible in unstructured and dynamic environments. While the applications are broad and interesting, there are a plethora of challenges in developing these systems such as coordination between the base and arm, reliance on onboard perception for perceiving and interacting with the environment and most importantly, simultaneously integrating all these parts together. Prior works approach the problem using disentangled modular skills for mobility and manipulation that are trivially tied together. This causes several limitations such as compounding errors, delays in decision-making and no whole-body coordination. In this work, we present a reactive mobile manipulation framework that uses an active visual system to consciously perceive and react to its environment. Similar to how humans leverage whole-body and hand-eye coordination, we develop a mobile manipulator that exploits its ability to move and see, more specifically -- to move in order to see and to see in order to move.  This allows it to not only move around and interact with its environment but also, choose ``when" to perceive ``what" using an active visual system.  We observe that such an agent learns to navigate around complex cluttered scenarios while displaying agile whole-body coordination using only ego-vision without needing to create environment maps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var mainLoopId = setInterval(function(){
+        $('video').not('#teaser').each(function(){
+      if ($(this).is(":in-viewport")) {
+          $(this)[0].play();
+      } else {
+          $(this)[0].pause();
+      }
+      })
+    },200);
+</script>
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4" style="text-align: center;">All videos play at 1x speed</h2>
+      </div> 
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="column is-full-width">
+          <h4 class="title is-6" style="text-align: center; padding-bottom: 10px;">All videos play at 4x</h4>
+        </div>  
+        <tr>
+          <td>
+            <h2 class="subtitle">
+              We test out policy in several in-the-wild environments to test its agility, whole-body and camera coordination to navigate through cluttered scenes. The policy runs at a frequency of 10Hz.
+            </h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/compilation.mov" style="border-radius: 10px; max-width: 100%;"></video>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="columns is-centered">
+              <div class="column is-three-quarters">
+                <div class="video-container" style="display: flex; justify-content: center;">
+                  <video controls autoplay muted preload="none" >
+                    <source  src="./resources/compiled_video_website.mp4" type="video/mp4" style="border-radius: 10px; max-width: 100%;">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Emergent Behavior</h2>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                We observe emergent whole-body coordination for obstacle avoidance where the robot learns to move its arm to navigate across floating and dynamic obstacles efficiently without always re-routing or re-planning base movement.
+              </h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/whole_body/video_1.mp4" style="border-radius: 10px;"></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/whole_body/video_2.mp4" style="border-radius: 10px;"></video>
+                </div>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Robustness to Adversarial Scenarios</h2>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                The policy shows robustness to a variety of adversarial conditions. In the fisrt video, we see an adversarial case of dynamic obstacle avoidance where humans actively try to block its path several times, but the robot continues to turn and re-route its path.
+                <br><p style="margin:10px;"></p> In the second video, the robot nagivates in dimly-lit clutter in an outdoor environment. Even with the rough and bumpy floor which causes inaccuracies in the wheel odometry and jittery motion, the robot adjusts its movement.
+              </h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/whole_body/video_5.mp4" style="border-radius: 10px;"></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/whole_body/video_6.mp4" style="border-radius: 10px;"></video>
+                </div>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Coordinated Camera and Robot Movement</h2>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                Due to the camera's narrow field-of-view of 58x87, using an active visual system the policy learns to move the camera consistently while moving the robot in order to navigate in narrow corridoors as well as be reactive in the presence of walls or suddenly occuring dynamic obstacles such as a person interrupting with a box in hand.
+              </h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/whole_body/video_3.mp4" style="border-radius: 10px;"></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/whole_body/video_4.mp4" style="border-radius: 10px;"></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/whole_body/video_7.mp4" style="border-radius: 10px;"></video>
+                </div>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Mobile Manipulation for diverse objects with whole-body and camera coordination</h2>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                  The robot looks around for an object placed on a table from far-off using its actuated camera. Once the object is in its field of view, the robot navigates to the table and picks up the object. Even when the grasp is not perfect, it re-adjusts its base to get a better grip of the object and then lift it up.
+              </h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/mobile_manipulation/pick_video_1.mp4" style="border-radius: 10px;"></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/mobile_manipulation/pick_video_2.mp4" style="border-radius: 10px;"></video>
+                </div>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="col">
+        <h6 style="text-align: right;">All videos play at 4x</h6>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+</body>
+</html>
