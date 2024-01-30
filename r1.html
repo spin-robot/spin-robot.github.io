@@ -76,7 +76,7 @@
         <tr>
           <td>
               <h2 class="subtitle">
-                As per the suggestion of the reviewer, we visualize the behavior of the camera movement and corresponding depth and rgb (only for visualization) observations from the robot's camera on the bottom right of each video. As shown in the videos, the actuated camera allows the robot to gather most important information of the environment with respect to the heading direction of the robot and nearby obstacles at any given time. Note that the arm not only moves to avoid obstacles but also to minimize any occlusions to the camera while moving. For instance, while rotating, the robot moves the camera to look at both side in order to ensure no collisions. Moreover, as can be observed in both the videos, the initial position of the robot base, arm and camera are heavily randomized in each rollout. Active Vision helps the robot to be robust to such randomizations even when the obstacle is too close to its starting position or the camera is pointing to arbitrary directions at the beginning. By only allowing base rotation or translation at a time, the robot also avoids random rotations, leading to smoother trajectories.
+                As per the suggestion of the reviewer, we visualize the behavior of the camera movement and corresponding depth and rgb (only for visualization) observations from the robot's camera. As shown in the videos, the actuated camera allows the robot to gather most important information of the environment with respect to the heading direction of the robot and nearby obstacles at any given time. Note that the arm not only moves to avoid obstacles but also to minimize any occlusions to the camera while moving. Moreover, as can be observed in both the videos, the initial position of the robot base, arm and camera are heavily randomized in each rollout. Active Vision helps the robot to be robust to such randomizations even when the obstacle is too close to its starting position or the camera is pointing to arbitrary directions at the beginning. By only allowing base rotation or translation at a time, the robot also avoids random rotations, leading to smoother trajectories. Also, the left video also highlights how whole-body coordination helps it to efectively navigate through the first two obstacles.
               </h2>
           </td>
           <br>
@@ -88,10 +88,10 @@
             <div class="row">
               <div class="columns is-centered">
                 <div class="col">
-                    <video playsinline autoplay loop muted src="./resources/rebuttal/r1_1.mp4" style="border-radius: 10px;"></video>
+                    <video playsinline autoplay loop muted src="./resources/rebuttal/r1_11.mp4" style="border-radius: 10px; height: 450px"></video>
                 </div>
                 <div class="col">
-                  <video playsinline autoplay loop muted src="./resources/rebuttal/r1_2.mp4" style="border-radius: 10px; height: 425px"></video>
+                  <video playsinline autoplay loop muted src="./resources/rebuttal/r1_2.mp4" style="border-radius: 10px;"></video>
                 </div>
               </div>
             </div>
