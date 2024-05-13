@@ -40,26 +40,92 @@
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-body no-bottom-padding">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SPIN: Simultaneous Perception, Interaction and Navigation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Anonymous CVPR submission
-            </span>
-          </div>
-          </div>
+  <section class="hero">
+    <div class="hero-body no-bottom-padding">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SPIN: Simultaneous Perception, <br>Interaction and Navigation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a target="_blank" href="https://shagunuppal.github.io/">Shagun Uppal</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://anag.me/">Ananye Agarwal</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://haoyu-x.github.io/">Haoyu Xiong</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://kennyshaw.net/">Kenneth Shaw</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>&nbsp;&nbsp;&nbsp;
+                
+                <!-- <br />Carnegie Mellon University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <br><br>
+                <center>
+                  <div class="image-row">
+                    <img src="./resources/cmu-wordmark-horizontal-r.png" width="50%"></img>
+                  </div>
+                </center>
+                
+                <span class="brmod" style="color:rgb(183, 0, 0)"><b>CVPR 2024</b></span>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://arxiv.org/pdf/2211.07638.pdf" -->
+                    <a target="_blank" href="https://spin-robot.github.io/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- arXiv Link. -->
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://arxiv.org/abs/2211.07638" -->
+                    <a target="_blank" href="https://spin-robot.github.io/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://youtu.be/5sRqythe6TE" -->
+                    <a target="_blank" href="https://spin-robot.github.io/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- twitter Link. -->
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://twitter.com/pathak2206/status/1592593398493761538" -->
+                    <a target="_blank" href="https://spin-robot.github.io/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Summary</span>
+                  </a>
+                </span>
+              </div>
+  
+            </div>
+            </div>
+  
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" style="padding-bottom: 0">
+<!-- Rebuttal Videos -->
+<!-- <section class="section" style="padding-bottom: 0">
   <div class="columns is-centered has-text-centered">
     <div class="column is-two-thirds">
       <h2 class="title is-2">Rebuttal Videos</h2>
@@ -94,16 +160,26 @@
     </div>
   </div>
 </div>
-</section>
+</section> -->
+
 
 <section class="section" style="padding-bottom: 0">
+    <div class="container">
+    <div id="method_video" class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds no-bottom-padding">
+        <video controls src="./resources/full_video/spin_final_video_v5_compressed.mov" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;">
+          <!-- <iframe height="500" src="https://www.youtube.com/embed/RLF07HVEg_k" title="YouTube video player" frameborder="0" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+    </div>
+  
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
+        <br>
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While there has been remarkable progress recently in the fields of manipulation and locomotion, mobile manipulation remains a long-standing challenge. Compared to locomotion or static manipulation, a mobile system must make a diverse range of long-horizon tasks feasible in unstructured and dynamic environments. While the applications are broad and interesting, there are a plethora of challenges in developing these systems such as coordination between the base and arm, reliance on onboard perception for perceiving and interacting with the environment and most importantly, simultaneously integrating all these parts together. Prior works approach the problem using disentangled modular skills for mobility and manipulation that are trivially tied together. This causes several limitations such as compounding errors, delays in decision-making and no whole-body coordination. In this work, we present a reactive mobile manipulation framework that uses an active visual system to consciously perceive and react to its environment. Similar to how humans leverage whole-body and hand-eye coordination, we develop a mobile manipulator that exploits its ability to move and see, more specifically -- to move in order to see and to see in order to move.  This allows it to not only move around and interact with its environment but also, choose ``when" to perceive ``what" using an active visual system.  We observe that such an agent learns to navigate around complex cluttered scenarios while displaying agile whole-body coordination using only ego-vision without needing to create environment maps.
+            While there has been remarkable progress recently in the fields of manipulation and locomotion, mobile manipulation remains a long-standing challenge. Compared to locomotion or static manipulation, a mobile system must make a diverse range of long-horizon tasks feasible in unstructured and dynamic environments. While the applications are broad and interesting, there are a plethora of challenges in developing these systems such as coordination between the base and arm, reliance on onboard perception for perceiving and interacting with the environment and most importantly, simultaneously integrating all these parts together. Prior works approach the problem using disentangled modular skills for mobility and manipulation that are trivially tied together. This causes several limitations such as compounding errors, delays in decision-making and no whole-body coordination. In this work, we present a reactive mobile manipulation framework that uses an active visual system to consciously perceive and react to its environment. Similar to how humans leverage whole-body and hand-eye coordination, we develop a mobile manipulator that exploits its ability to move and see, more specifically -- to move in order to see and to see in order to move.  This allows it to not only move around and interact with its environment but also, choose <b><i>when</i></b> to perceive <b><i>what</i></b> using an active visual system.  We observe that such an agent learns to navigate around complex cluttered scenarios while displaying agile whole-body coordination using only ego-vision without needing to create environment maps.
           </p>
         </div>
       </div>
@@ -123,50 +199,123 @@
     },200);
 </script>
 
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4" style="text-align: center;">All videos play at 1x speed</h2>
-      </div> 
+<!-- <style>
+  .thumbnail {
+    width: 30%;
+    margin: 20px 1%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover img {
+    transform: translateY(-5%);
+  }
+  
+  .thumbnail-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .thumbnail:hover .thumbnail-content {
+    opacity: 1;
+  }
+  
+  .thumbnail-content h3 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .thumbnail-content p {
+    color: #fff;
+    margin: 5px 0 0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="thumbnails-container">
+    <div class="thumbnail">
+      <img src="./resources/highlights_dummy_1.png" alt="Image 1">
+      <div class="thumbnail-content">
+        <h3>Key Contribution 1</h3>
+        <p>Description of the first key contribution of your paper.</p>
+      </div>
+    </div>
+  
+    <div class="thumbnail">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="thumbnail-content">
+        <h3>Key Contribution 2</h3>
+        <p>Description of the second key contribution of your paper.</p>
+      </div>
+    </div>
+  
+    <div class="thumbnail">
+      <img src="image3.jpg" alt="Image 3">
+      <div class="thumbnail-content">
+        <h3>Key Contribution 3</h3>
+        <p>Description of the third key contribution of your paper.</p>
+      </div>
     </div>
   </div>
-</section> -->
+   -->
+
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <div class="column is-full-width">
-          <h4 class="title is-6" style="text-align: center; padding-bottom: 10px;">All videos play at 4x</h4>
-        </div>  
+          <h2 class="title is-4" style="text-align: center;">All videos play at 2x speed</h2>
+        </div>
+        <br><br>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Mobile Manipulation with Hand-Eye Coordination</h2>
         <tr>
           <td>
-            <h2 class="subtitle">
-              We test out policy in several in-the-wild environments to test its agility, whole-body and camera coordination to navigate through cluttered scenes. The policy runs at a frequency of 10Hz.
-            </h2>
+              <h2 class="subtitle">
+                 SPIN looks around for finding the desired object using its actuated camera. Once the target object is located, the robot navigates towards the object to pick it up. Displaying hand-eye coordination, it adjust its base and arm to get a better grasp of the object by trying to keep the object within its field of view even while moving. <br>
+              </h2>
           </td>
         </tr>
+        
+        <div id="method_video" class="columns is-centered has-text-centered">
+          <div class="column is-two-thirds no-bottom-padding">
+            <video playsinline autoplay loop muted src="./resources/hand-eye-coord/soft_toy.mov" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;"></video><br><br>
+          </div>
+        </div>
+
         <tr>
           <td>
-            <!-- <div class="row">
+            <div class="row">
               <div class="columns is-centered">
                 <div class="col">
-                  <video playsinline autoplay loop muted src="./resources/compilation.mov" style="border-radius: 10px; max-width: 100%;"></video>
+                    <video playsinline autoplay loop muted src="./resources/hand-eye-coord/gum_box.mp4" style="border-radius: 10px;"></video>
                 </div>
-              </div>
-            </div> -->
-
-            <div class="columns is-centered">
-              <div class="column is-three-quarters">
-                <div class="video-container" style="display: flex; justify-content: center;">
-                  <video controls autoplay muted preload="none" >
-                    <source  src="./resources/compiled_video_website.mp4" type="video/mp4" style="border-radius: 10px; max-width: 100%;">
-                  </video>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/hand-eye-coord/coffee_cup.mov" style="border-radius: 10px;"></video>
                 </div>
               </div>
             </div>
-
             <br>
           </td>
         </tr>
@@ -179,11 +328,11 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Emergent Behavior</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Emergent Whole-Body Obstacle Avoidance</h2>
         <tr>
           <td>
               <h2 class="subtitle">
-                We observe emergent whole-body coordination for obstacle avoidance where the robot learns to move its arm to navigate across floating and dynamic obstacles efficiently without always re-routing or re-planning base movement.
+                We observe emergent whole-body coordination for obstacle avoidance where the robot learns to move its arm to navigate across floating and dynamic obstacles efficiently without re-routing or re-planning base movement. Without any mapping or planning, active perception allows the robot to pan its head camera in order to aggregate useful information about its environment and dynamically adapt according to it. <br>
               </h2>
           </td>
         </tr>
@@ -207,6 +356,31 @@
   </div>
 </section>
 
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">  
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">SPIN cleans up the table</h2>
+        <tr>
+          <td>
+              <h2 class="subtitle">
+                SPIN can repeatedly fetch different objects and clean up a messy table. With an actuated camera head, whole-body coordination and robustness to random initializations, SPIN can seamlessly performs manipulation several times in a go. <br>
+              </h2>
+          </td>
+        </tr>
+        
+        <div id="method_video" class="columns is-centered has-text-centered">
+          <div class="column is-two-thirds no-bottom-padding">
+            <video playsinline autoplay loop muted src="./resources/table_cleanup/grasping_clean_table_processed.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;"></video><br><br>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -215,7 +389,7 @@
         <tr>
           <td>
               <h2 class="subtitle">
-                The policy shows robustness to a variety of adversarial conditions. In the fisrt video, we see an adversarial case of dynamic obstacle avoidance where humans actively try to block its path several times, but the robot continues to turn and re-route its path.
+                The policy shows robustness to a variety of adversarial conditions. In the fisrt video, we see an adversarial case of dynamic obstacle avoidance where humans actively try to block its path several times, but the robot continues to turn and re-route continously.
                 <br><p style="margin:10px;"></p> In the second video, the robot nagivates in dimly-lit clutter in an outdoor environment. Even with the rough and bumpy floor which causes inaccuracies in the wheel odometry and jittery motion, the robot adjusts its movement.
               </h2>
           </td>
@@ -244,30 +418,69 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Coordinated Camera and Robot Movement</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Fetching a diverse set of objects</h2>
         <tr>
           <td>
               <h2 class="subtitle">
-                Due to the camera's narrow field-of-view of 58x87, using an active visual system the policy learns to move the camera consistently while moving the robot in order to navigate in narrow corridoors as well as be reactive in the presence of walls or suddenly occuring dynamic obstacles such as a person interrupting with a box in hand.
+                  SPIN can fetch a diverse set of objects ranging from rigid to deformable of different shapes, sizes and masses, such as a plastic cup or a fruit or a soft toy. <br>
               </h2>
           </td>
         </tr>
+        
         <tr>
           <td>
             <div class="row">
               <div class="columns is-centered">
                 <div class="col">
-                    <video playsinline autoplay loop muted src="./resources/whole_body/video_3.mp4" style="border-radius: 10px;"></video>
+                  <video playsinline autoplay loop muted src="./resources/grasping/toy_dice.mp4" width="100%"
+                        style="border-radius:10px; "></video>
                 </div>
                 <div class="col">
-                  <video playsinline autoplay loop muted src="./resources/whole_body/video_4.mp4" style="border-radius: 10px;"></video>
+                  <video playsinline autoplay loop muted src="./resources/grasping/banana.mp4" width="100%"
+                        style="border-radius:10px; "></video>
                 </div>
                 <div class="col">
-                  <video playsinline autoplay loop muted src="./resources/whole_body/video_7.mp4" style="border-radius: 10px;"></video>
+                  <video playsinline autoplay loop muted src="./resources/grasping/coffee_cup.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+              </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/grasping/oil_bottle.mp4" width="100%"
+                          style="border-radius:10px; "></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/grasping/inverted_cup.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/grasping/apple.mp4" width="100%"
+                        style="border-radius:10px; "></video>
                 </div>
               </div>
             </div>
             <br>
+            <br>
+            <div class="row">
+              <div class="columns is-centered">
+                <div class="col">
+                    <video playsinline autoplay loop muted src="./resources/other/teddy_bear.mp4" width="100%"
+                          style="border-radius:10px; "></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/other/carrot.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+                </div>
+                <div class="col">
+                  <video playsinline autoplay loop muted src="./resources/other/soup_can.mp4" width="100%"
+                        style="border-radius:10px; "></video>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
       </div> 
@@ -275,47 +488,19 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Mobile Manipulation for diverse objects with whole-body and camera coordination</h2>
-        <tr>
-          <td>
-              <h2 class="subtitle">
-                  The robot looks around for an object placed on a table from far-off using its actuated camera. Once the object is in its field of view, the robot navigates to the table and picks up the object. Even when the grasp is not perfect, it re-adjusts its base to get a better grip of the object and then lift it up.
-              </h2>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-              <div class="columns is-centered">
-                <div class="col">
-                    <video playsinline autoplay loop muted src="./resources/mobile_manipulation/pick_video_1.mp4" style="border-radius: 10px;"></video>
-                </div>
-                <div class="col">
-                  <video playsinline autoplay loop muted src="./resources/mobile_manipulation/pick_video_2.mp4" style="border-radius: 10px;"></video>
-                </div>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>
+      <!-- @article{cheng2023parkour,
+      title={Extreme Parkour with Legged Robots},
+      author={Cheng, Xuxin and Shi, Kexin and Agarwal, Ananye and Pathak, Deepak},
+      journal={arXiv preprint arXiv:2309.14341},
+      year={2024}
+      } -->
+    </code></pre>
   </div>
 </section>
-
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="col">
-        <h6 style="text-align: right;">All videos play at 4x</h6>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 </body>
 </html>
