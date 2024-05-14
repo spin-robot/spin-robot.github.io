@@ -164,7 +164,13 @@
     },200);
 </script>
 
-<!-- <style>
+<style>
+  .thumbnails-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
   .thumbnail {
     width: 30%;
     margin: 20px 1%;
@@ -214,37 +220,44 @@
     color: #fff;
     margin: 5px 0 0;
   }
+
+  .heading-container {
+    text-align: center;
+  }
 </style>
 </head>
 <body>
 
-  <div class="thumbnails-container">
-    <div class="thumbnail">
-      <img src="./resources/highlights_dummy_1.png" alt="Image 1">
-      <div class="thumbnail-content">
-        <h3>Key Contribution 1</h3>
-        <p>Description of the first key contribution of your paper.</p>
-      </div>
-    </div>
-  
-    <div class="thumbnail">
-      <img src="image2.jpg" alt="Image 2">
-      <div class="thumbnail-content">
-        <h3>Key Contribution 2</h3>
-        <p>Description of the second key contribution of your paper.</p>
-      </div>
-    </div>
-  
-    <div class="thumbnail">
-      <img src="image3.jpg" alt="Image 3">
-      <div class="thumbnail-content">
-        <h3>Key Contribution 3</h3>
-        <p>Description of the third key contribution of your paper.</p>
-      </div>
+<div class="heading-container">
+  <br>
+  <h2 class="title is-2" style="padding-bottom: 10px;">Key Features</h2>
+</div>
+
+<div class="thumbnails-container">
+  <div class="thumbnail">
+    <img src="./resources/thumbnails/thumbnail_1.png" alt="Image 1">
+    <div class="thumbnail-content">
+      <h3>With no mapping and no planning</h3>
+      <p>SPIN learns and adapts on the move.</p>
     </div>
   </div>
-   -->
 
+  <div class="thumbnail">
+    <img src="./resources/thumbnails/thumbnail_2.png" alt="Image 2">
+    <div class="thumbnail-content">
+      <h3>With an actuated camera</h3>
+      <p>SPIN couples perception and control optimization.</p>
+    </div>
+  </div>
+
+  <div class="thumbnail">
+    <img src="./resources/thumbnails/thumbnail_3.png" alt="Image 3">
+    <div class="thumbnail-content">
+      <h3>With Large-scale simulation-based training</h3>
+      <p>SPIN shows robust in-the-wild generalization.</p>
+    </div>
+  </div>
+</div>
 
 <section class="section">
   <div class="container">
