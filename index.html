@@ -164,60 +164,48 @@
 
 <style>
   .thumbnails-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
   }
-  
+
   .thumbnail {
-    width: 30%;
-    margin: 20px 1%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+      width: 30%;
+      margin: 20px 1%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transition: none; /* Remove the transition effect */
   }
-  
-  .thumbnail:hover {
-    transform: scale(1.05);
-  }
-  
+
   .thumbnail img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+      width: 100%;
+      height: auto;
+      transition: none; /* Remove the transition effect */
   }
-  
-  .thumbnail:hover img {
-    transform: translateY(-5%);
-  }
-  
+
   .thumbnail-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    box-sizing: border-box;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      box-sizing: border-box;
+      opacity: 1; /* Always visible */
   }
-  
-  .thumbnail:hover .thumbnail-content {
-    opacity: 1;
-  }
-  
+
   .thumbnail-content h3 {
-    color: #fff;
-    margin: 0;
+      color: #fff;
+      margin: 0;
   }
-  
+
   .thumbnail-content p {
-    color: #fff;
-    margin: 5px 0 0;
+      color: #fff;
+      margin: 5px 0 0;
   }
+
 
   .heading-container {
     text-align: center;
@@ -235,24 +223,24 @@
   <div class="thumbnail">
     <img src="./resources/thumbnails/thumbnail_1.png" alt="Image 1">
     <div class="thumbnail-content">
-      <h3>With no mapping and no planning</h3>
-      <p>SPIN learns and adapts on the move.</p>
+      <h3><center>SPIN learns and <br> adapts on the move</center></h3>
+      <!-- <p>SPIN learns to adapt on the move.</p> -->
     </div>
   </div>
 
   <div class="thumbnail">
     <img src="./resources/thumbnails/thumbnail_2.png" alt="Image 2">
     <div class="thumbnail-content">
-      <h3>With an actuated camera</h3>
-      <p>SPIN couples perception and control optimization.</p>
+      <h3><center>SPIN couples <br> action-perception optimization</center></h3>
+      <!-- <p>SPIN couples perception and control optimization.</p> -->
     </div>
   </div>
 
   <div class="thumbnail">
     <img src="./resources/thumbnails/thumbnail_3.png" alt="Image 3">
     <div class="thumbnail-content">
-      <h3>With large-scale simulation-based training</h3>
-      <p>SPIN shows robust in-the-wild generalization.</p>
+      <h3><center>SPIN is trained with <br> large-scale randomization</center></h3>
+      <!-- <p>SPIN shows robust in-the-wild generalization.</p> -->
     </div>
   </div>
 </div>
